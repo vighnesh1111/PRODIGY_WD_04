@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="name">Weather Forecast</div>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="search">
+        <form method="post" name="ok">
+            <input type="search" placeholder="Search location" name="okay">
+            <span class="but" onclick="w()">Search</span>
+        </form>
+    </div>
+
+    <div class="whole" id="whole">
+        <div class="city">
+            Location: <span id="city"></span>
+        </div>
+
+        <div class="main">
+            <div class="temp_main">
+                <center>Temperature related</center> <br>
+                <div class="t">Temperature is <span id="temp"></span></div> <br>
+                <div class="t">Feels like <span id="feels_like"></span></div> <br>
+                <div class="t">Humidity is <span id="humidity"></span></div> <br>
+                <div class="t">Minimum Temperature is <span id="min_temp"></span></div> <br>
+                <div class="t">Maximum Temperature is <span id="max_temp"></span></div> <br>
+            </div>
+
+            <div class="sun">
+                <center>Sun details</center> <br>
+                <div>Sunrise at <span id="sunrise"></span></div> <br>
+                <div>Sunset at <span id="sunset"></span></div>
+            </div>
+
+            <div class="cloud_main">
+                <center>Cloud details</center> <br>
+                <div class="cloud">Cloud pct is <span id="cloud_pct"></span></div> <br>
+                <div class="cloud">Wind speed is <span id="wind_speed"></span></div> <br>
+                <div class="cloud">Wind degrees is <span id="wind_degrees"></span></div> <br>
+            </div>
+        </div>
+        <div class="last"></div>
+    </div>
+</body>
+
+</html>
